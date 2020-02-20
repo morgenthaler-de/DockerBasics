@@ -48,7 +48,7 @@ ________________________________
 **Sample (Node)**
 ________________________________
 
-docker build -t warptec/node-web-app <!--build from dockerfile-->
+docker build -t warptec/node-web-app ```diff + text in green build from dockerfile```
 docker container create my_repo/my_image:my_tag //create and tag container
 docker run -p 49160:8080 -d warptec/node-web-app //create and start container
 
@@ -63,12 +63,6 @@ docker run --name docker-nginx -p 8080:80 nginx
 docker run --name docker-nginx -p 8080:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
 docker run --name docker-nginx -p 8080:80 -d -v c:/temp/DockerWorkshop/nginx:/usr/share/nginx/html nginx
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-```
 ________________________________
 
 **Sample (.net core webapi)**

@@ -1,0 +1,13 @@
+# erstellt ein Abblid vom node:carbon Docker image
+FROM node:dubnium
+# erstellt das app Verzeichnis innerhalb des images
+WORKDIR /usr/src/app
+#kopiert und installiert alle Abhängigkeiten vom package.json und package-lock.json in das erstellte Verzeichnis
+COPY package*.json ./
+RUN npm install
+# bundle app 
+COPY . .
+# veröffentlichen von port 8080 tcp 
+EXPOSE 8080
+# befehl um die Applikation zu starten
+CMD [ "npm", "start" ]

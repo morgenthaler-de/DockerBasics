@@ -1,5 +1,5 @@
 **********************************************************************************
-Docker Basic Commands
+**Docker Basic Commands**
 **********************************************************************************
 
 docker info
@@ -9,7 +9,7 @@ docker run hello-world
 docker system prune -a //Delete all containers, networks, and images.
 ________________________________
 
-Images
+**Images**
 ________________________________
 
 docker image ls //list images
@@ -21,7 +21,7 @@ docker image rm //delete an image
 
 ________________________________
 
-Container
+**Container**
 ________________________________
 
 docker container create //create a conatiner from an image
@@ -36,7 +36,7 @@ docker container rm // delete a stopped container
 
 ________________________________
 
-Sample (whalesay)
+**Sample (whalesay)**
 ________________________________
 
 docker run --rm firecyberice/whalesay Hello Docker
@@ -45,16 +45,16 @@ docker container ls -a
 docker rm -f {id]
 ________________________________
 
-Sample (Node)
+**Sample (Node)**
 ________________________________
 
-docker build -t warptec/node-web-app //build from dockerfile
+docker build -t warptec/node-web-app <!--build from dockerfile-->
 docker container create my_repo/my_image:my_tag //create and tag container
 docker run -p 49160:8080 -d warptec/node-web-app //create and start container
 
 ________________________________
 
-Sample (nginx)
+**Sample (nginx)**
 ________________________________
 
 docker pull nginx
@@ -66,7 +66,7 @@ docker run --name docker-nginx -p 8080:80 -d -v c:/temp/DockerWorkshop/nginx:/us
 
 ________________________________
 
-Sample (.net core webapi)
+**Sample (.net core webapi)**
 ________________________________
 
 dotnet new webapi -n Warptec.Docker.WebApi

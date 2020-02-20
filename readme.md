@@ -63,7 +63,12 @@ docker run --name docker-nginx -p 8080:80 nginx
 docker run --name docker-nginx -p 8080:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
 docker run --name docker-nginx -p 8080:80 -d -v c:/temp/DockerWorkshop/nginx:/usr/share/nginx/html nginx
 
-
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+```
 ________________________________
 
 **Sample (.net core webapi)**
